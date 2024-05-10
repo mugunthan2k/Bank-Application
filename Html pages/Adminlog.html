@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin login</title>
+<style >
+body
+{
+background-color: purple;
+}
+.body
+{
+	position: fixed;
+	top: 100px;
+	left: 900px;
+	border-radius: 6px;
+}
+input[type="email"],input[type="password"]
+{
+	height: 30px;
+	width: 350px;
+	text-align: center;
+}
+
+legend>img
+{
+height: 120px;
+border-radius: 50%;
+
+position: relative;
+top:-48px;
+left: 100px;
+}
+.for>a
+{
+color:black;
+text-decoration: none;
+margin-left: 110px;
+}
+.bodycontant{
+	height: 100%;
+	width: 500px;
+	position: fixed;
+	background-color: white;
+	text-align: center;
+	padding: 10px 20px 0px 20px;
+	background-color:white;
+	color:black;
+	box-shadow: 0px 0px 70px black; 
+	margin-left: 100px;
+}
+.bodycontant>h1
+{
+font-weight: bold;
+border-bottom: 4px solid purple;
+}
+
+
+</style>
+</head>
+<body>
+<div class="body">
+
+<legend><img alt="" src="https://cdn.pixabay.com/photo/2017/03/21/02/00/user-2160923_1280.png">
+<form  action="adminlogin" method="post">
+<table cellpadding="5px">
+<tbody>
+<tr><td><input type="email" placeholder="Enter your email" required name="amail"></td></tr>
+<tr><td><input type="password" placeholder="Enter your password" required name="apass"></td></tr>
+<tr><td><input type="submit" style="margin-left: 130px;"  ></td></tr>
+<tr><td><small class="for"><a href="#">forget password?</a></small></td></tr>
+<tr><td><input type="reset" ></td></tr></tbody>
+</table>
+</form>
+</div>
+<div class="bodycontant">
+<h1>admin login</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut urna in risus tincidunt accumsan. Vivamus euismod, libero ac faucibus pulvinar, justo nisi efficitur odio, eget posuere urna dui eget dui. Quisque vehicula felis vel libero laoreet, non congue metus lacinia. Duis varius nisl nec ligula convallis, at efficitur leo consectetur. Nam mattis velit a quam pretium, a ultrices nisl ultricies. Integer non sapien vitae tellus laoreet scelerisque eget vel magna. Donec aliquet mi non neque convallis, vita</p>
+
+
+</div>
+</body>
+</html>

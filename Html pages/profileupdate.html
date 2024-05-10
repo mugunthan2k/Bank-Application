@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh; 
+    width: 200px;
+    background-color: purple;
+    text-align: center;
+    color: white;
+    position:absolute;
+}
+.navbar h1,h2
+{
+margin: 5px;
+font-size: 30px;
+text-decoration: underline;
+}
+
+.btn a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0px;
+    margin-top: 25px;
+    font-size: 18px;
+   
+}
+
+.btn a:hover {
+    background-color: white;
+    color: purple; 
+    text-decoration: underline;
+    
+}
+.header
+{
+padding-left: 200px;	
+}
+.header>h1
+{
+color: purple;
+padding-left:10px;
+padding:10px;
+border-bottom: 3px solid purple;
+}
+.body
+{
+padding-left: 200px;
+}
+ .form
+  {
+  position: relative;
+  left: 300px;
+  top: 100px;
+  font-size: 20px;
+  
+  }
+  input {
+	height: 30px;
+	width: 400px;
+	margin-top: 15px;
+	font-size:15px;
+	padding: 7px;
+}
+input[type="submit"]
+{
+	background-color: purple;
+	color: white;
+	width: 200px;
+	margin-top: 20px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <h1>Welcome</h1>
+    <h2>Purple Bank</h2>
+    <div class="btn">
+        <a href="send.html">Send Money</a>
+        <a href="deposit.html">Deposit Money</a>
+        <a href="withdraw.html">Withdraw Money</a>
+        <a href="#">Profile Update</a>
+        <a href="userlogin.html">Login</a>
+    </div>
+</div>
+<div class="header">
+<h1>Send Money</h1>
+</div>
+<div class="body">
+
+<div class="form">
+  <form action="profile" method="post">
+  <table cellpadding="15px">
+  <tbody>
+  <tr><td>Name</td><td><input type="text" placeholder="Enter New Name" required name="name"></td></tr>
+ <tr><td>Mobile Number</td><td><input type="number" placeholder="Enter New Mobile Number" required name="phone"></td></tr>
+      <tr><td>PIN Number</td><td><input placeholder="Enter Pin number" type="number" name="pin" required></td></tr>
+  <tr><td colspan="2" style="text-align: center;"><input type="submit" value="Update"></td></tr>
+  </tbody>
+  </table>
+  </form>
+</div>
+</div>
+
+
+</body>
+</html>
